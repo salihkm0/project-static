@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home-style.css">
+    <script src="https://kit.fontawesome.com/5d2e8a75d6.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Subscription</title>
+</head>
+<body>
+         <!-------------------------------- nav bar start------------------------>
+
+         <%- include('partials/navbar.ejs')%>
+    </nav>
+    <div class="container sub-container">
+        <h2>Flexible <span>Planes</span></h2>
+        <p>Choose a plan that work best for you <br>
+            and your team.</p>
+        
+        <div class="subscription-cards">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="subscription-card">
+                        <h1>Basic</h1>
+                       <p>$5<span> /Month</span></p>
+                        <ul>
+                            <li><i class="fa-solid fa-check plan-li-icon"></i> Complete Blood Count</li>
+                            <li><i class="fa-solid fa-check plan-li-icon"></i> Fasting Blood Sugar</li>
+                            <li><i class="fa-solid fa-check plan-li-icon"></i> Dental Consultation</li>
+                            <li><i class="fa-solid fa-check plan-li-icon"></i> Urine Routine Analysis</li>
+                        </ul>
+                        <a href="/payment"><button class="btn plan-btn">Choose Plan <i class="fa-solid fa-arrow-right plan-btn-icon"></i></button></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="subscription-card">
+                        <h1>Advanced</h1>
+                       <p>$10<span> /Month</span></p>
+                        <ul>
+                            <li><i class="fa-solid fa-check plan-li-icon"></i>ECG</li>
+                            <li><i class="fa-solid fa-check plan-li-icon"></i>Physician Consultation </li>
+                            <li><i class="fa-solid fa-check plan-li-icon"></i>Liver Function Tests</li>
+                            <li><i class="fa-solid fa-check plan-li-icon"></i>Blood Urea</li>
+                        </ul>
+                        <a href="/payment"><button class="btn plan-btn">Choose Plan <i class="fa-solid fa-arrow-right plan-btn-icon"></i></button></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="subscription-card">
+                        <h1>Premium</h1>
+                       <p>$15<span> /Month</span></p>
+                        <ul>
+                            <li><i class="fa-solid fa-check plan-li-icon"></i>Premium Check up</li>
+                            <li><i class="fa-solid fa-check plan-li-icon"></i>Post Prandial Blood Sugar</li>
+                            <li><i class="fa-solid fa-check plan-li-icon"></i>Chest X-Ray</li>
+                            <li><i class="fa-solid fa-check plan-li-icon"></i>Urine Microalbumin</li>
+                        </ul>
+                        <a href="/payment"><button class="btn plan-btn">Choose Plan <i class="fa-solid fa-arrow-right plan-btn-icon"></i></button></a>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <!-- <button onclick="openPopup()" class="Custome-btn">Customize</button> -->
+
+                        <div class="custome-sub">
+                            <h3>Customize Your Plans</h3>
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <!-- <h3>Basic</h3> -->
+                                    <input type="checkbox" id="Basic-med" name="Basic"><label for="Basic-med">Complete Blood Count</label> <br>
+                                    <input type="checkbox" id="Basic-doc" name="Basic"><label for="Basic-doc">Fasting Blood Sugar</label> <br>
+                                    <input type="checkbox" id="Basic-pre" name="Basic"><label for="Basic-pre">Dental Consultation</label> <br>
+                                    <input type="checkbox" id="Basic-nur" name="Basic"><label for="Basic-nur">Urine Routine Analysis</label> <br>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <!-- <h3>Advanced</h3> -->
+                                    <input type="checkbox" id="Basic-med" name="Advanced"><label for="Basic-med">ECG</label> <br>
+                                    <input type="checkbox" id="Basic-doc" name="Advanced"><label for="Basic-doc">Physician Consultation</label> <br>
+                                    <input type="checkbox" id="Basic-pre" name="Advanced"><label for="Basic-pre">Liver Function Tests</label> <br>
+                                    <input type="checkbox" id="Basic-nur" name="Advanced"><label for="Basic-nur">Blood Urea</label> <br>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <!-- <h3>Premium</h3> -->
+                                    <input type="checkbox" id="Basic-med" name="Premium"><label for="Basic-med">Premium Check up</label><br>
+                                    <input type="checkbox" id="Basic-doc" name="Premium"><label for="Basic-doc">Post Prandial Blood Sugar</label><br>
+                                    <input type="checkbox" id="Basic-pre" name="Premium"><label for="Basic-pre">Chest X-Ray</label><br>
+                                    <input type="checkbox" id="Basic-nur" name="Premium"><label for="Basic-nur">Urine Microalbumin</label><br>
+                                </div>
+                            </div>
+                                
+
+                        <a href="/payment"><button class="btn plan-btn">Choose Plan <i class="fa-solid fa-arrow-right plan-btn-icon"></i></button></a>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--------------------------------footer section start------>
+
+     <%- include('partials/footer.ejs')%>
+
+    <!--------------------------------footer section end-------->
+
+
+
+                <script>
+
+                    function openPopup(){
+                        document.getElementById("popUp").style.display = "block";
+                        //document.getElementById("oppenBtn").style.display = "none";
+                        
+                    }
+                    function closePopup(){
+                        document.getElementById("popUp").style.display = "none";
+                        //document.getElementById("oppenBtn").style.display = "block";
+                    }
+                </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

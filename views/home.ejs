@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <link rel="stylesheet" href="/css/home-style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5d2e8a75d6.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <style>
+        .sub-nav{
+            background: transparent;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>HealthHive</title>
+</head>
+<body>
+
+        <!-------------------------------- head section start------------------->
+
+    <section class="head" id="head">
+        <!-- Back to Top -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up arrow-top"></i></button>
+
+        <!-------------------------------- nav bar start------------------------>
+
+        <%- include('partials/navbar.ejs')%>
+        <!-------------------------------- nav bar end----------------------->
+
+        <!-------------------------------- head start------------------------>
+        
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-md-5 col-5 img-part">
+                        <img src="./images/doctor-14044 1.png" alt="">
+                    </div>
+                    <div class="col-xl-6 col-md-7 col-7 text-part">
+                        <h1>
+                            <span>Take Care of Your</span>  <br>
+                            Health Anytime <br>
+                            Anywhere
+                        </h1>
+                        <!-- <div class="search-box">
+                            <form action="">
+                                <input type="text" class="search-input" placeholder="Write your search...">
+                                <button type="submit">Find<i class="fa-solid fa-arrow-right"></i></button>
+                            </form>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <!-------------------------------- head end------------------------>
+
+        <!-------------------------------- survice start------------------->
+        <div class="service" id="Service">
+            <div class="row">
+                <div class="col-xl-3 col-md-3 col-sm-3 col-3 service-card">
+
+                    <p class="card-text"><a class= "card-a"href="#Home"><i class="fa-solid fa-user-doctor service-icon"></i>Doctor</a></p>
+                    <!-- <button class="service-card-btn" id="openBtn" onclick="openPopup()"><i class="fa-solid fa-user-doctor service-icon"></i>Doctor</button> -->
+
+                </div>
+                <!-- <div class="popup-sreen" id="popUp">
+                    <h1>Sample</h1>
+                    <p>Popup forms are a great way to have dialogs on
+                         your website. You can create popup login forms, 
+                         contact forms or any other type of forms for your site. 
+                         The popup button will be just under the visitor's eye. 
+                         When a user clicks on the popup button, the form will appear on the screen.</p>
+                         <button id="closeBtn" onclick="closePopup()">close</button>
+                </div> -->
+                <div class="col-xl-3 col-md-3 col-sm-3 col-3 service-card">
+
+                    <p class="card-text"><a class= "card-a"href="#Home"><i class="fa-regular fa-hospital service-icon"></i>Hospital</a></p>
+                    
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3 col-3 service-card">
+
+                    <p class="card-text"><a class= "card-a"href="#Home"><i class="fa-solid fa-house-medical service-icon"></i>Nursing Homes</a></p>
+
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3 col-3 service-card">
+
+                    <p class="card-text"><a class= "card-a"href="#Home"><i class="fa-solid fa-wheelchair service-icon"></i>Hospice Care</a></p>
+                
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3 col-3 service-card">
+
+                    <p class="card-text"><a class= "card-a"href="#Home"><i class="fa-solid fa-capsules service-icon"></i>Rehab</a></p>
+
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3 col-3 service-card">
+
+                    <p class="card-text"><a class= "card-a"href="#Home"><i class="fa-solid fa-user-doctor service-icon"></i>Dialysis Facilities</a></p>
+
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3 col-3 service-card">
+
+                    <p class="card-text"><a class= "card-a"href="#Home"><i class="fa-regular fa-calendar-days service-icon"></i>Health Schedule</a></p>
+
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3 col-3 service-card">
+
+                    <p class="card-text"><a class= "card-a"href="#Home"><i class="fa-sharp fa-solid fa-truck-medical service-icon"></i> Ambulance Call</a></p>
+
+                </div>
+            </div>
+        </div>
+        <!-------------------------------- survice end---------------------->
+
+    </section>
+        <!-------------------------------- head section end----------------->
+
+        <!-------------------------------- about section start-------------->
+    
+    <section class="about" id="About">
+            <div class="content-1">
+                <h1 >Our <span>Quality System </span> is<br>
+                  Ready to <span>help You</span>!</h1>
+                <h5> <span>Favourite</span> for health care because of some <br>
+                    excellent <span>feature for daily use</span></h5>
+                <p> Our system is designed<br>
+                    to identify potential issues before they occur, and to quickly <br>
+                    address any concerns that arise. Trust that our quality system <br>
+                    is ready to help you achieve your goals and exceed your expectations.</p>
+                <table>
+                    <tr>
+                        <td><i class="fa-solid fa-arrow-right about-icon"></i>24 Hours Service</td>
+                        <td> <a href="#Home"><i class="fa-solid fa-arrow-right about-icon"></i>Update Covid 19</a> </td>
+                        </tr>
+                    <tr>
+                        <td><a href="#Home"><i class="fa-solid fa-arrow-right about-icon"></i>Discounts & Update</a></td>
+                        <td><a href="#Home"><i class="fa-solid fa-arrow-right about-icon"></i>Tips & tricks video</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Home"><i class="fa-solid fa-arrow-right about-icon"></i>User Friendly</a></td>
+                        <td><a href="#Home"><i class="fa-solid fa-arrow-right about-icon"></i>Assistant Calender</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="content-2">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 col-4">
+                        <img src="./images/Group 29.svg" alt="">
+                    </div>
+                    <div class="col-md-6 col-md-6 col-8">
+                        <h1>We <span> Hold Everything </span><br>
+                            Close to Health</h1>
+                        <p>At our company, we understand the value of health, and that is why we<br>
+                        hold everything close to it. We are committed to providing a healthy and<br> 
+                        safe environment for our employees, customers, and partners.Our products and<br>
+                        services are designed with health in mind, and we always strive to promote<br>
+                         healthy habits and practices. Trust that we prioritize health above all else.</p>
+                        <!-- <p class="agent"><span class="span-450">450</span><span class="M"> M+ </span>Our Agent</p>
+                        <div class="rating">
+                            <div class="sqr"></div>
+                                <p>Mental health, as defined by the Public Health Agency of Canada, <br>
+                                is an individual's capacity to feel, think, and act in ways to achieve a
+                                <br>better quality of  life while respecting the personal, </p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+     </section>
+
+        <!--------------------------------about section end---------------->
+        <!--------------------------------subscription section start------->
+
+    <section class="subscription">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-6 text-part">
+                <h1>The Future of <br>
+                <span>Quality</span> Your <span>Health</span></h1>
+            </div>
+            <div class="col-md-6 col-sm-6 col-6">
+               <a href="/subscription"><button class="sub-btn">Subscribe Now</button></a> 
+            </div>
+        </div>
+        <div class="sub-section">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-4 sub-card-sec">
+                    <div class="sub-card">
+                        <h3>Health Consultation</h3>
+                        <p>Our health consultation services offer expert advice
+                             to help you achieve optimal health.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-4 sub-card-sec">
+                    <div class="sub-card">
+                        <h3>Finding Health Need</h3>
+                        <p>Identify your health needs with our assessment and 
+                            find solutions to improve your wellbeing.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-4 sub-card-sec">
+                    <div class="sub-card">
+                        <h3>Start Health Care</h3>
+                        <p>Begin your journey to wellness with our personalized
+                             and comprehensive healthcare services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!--------------------------------subscription section end--------->
+        <!--------------------------------review section start------------->
+
+        <section class="review">
+                <div class="rev-head">
+                    <h1>What <span>People Say</span>  <br>
+                    About us</h1>
+                </div>
+                <div class="rev-card">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./images/download.jpeg" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <p class="rev-text">The website's content is informative and reliable, with well-researched articles and blog posts written by healthcare professionals.</p>
+                                    <p class="rev-name">Shamlik</p>
+                                    <p class="rev-contry">USA</p>
+                                </div>
+                                
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="./images/download (1).jpeg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <p class="rev-text">The website's content is informative and reliable, with well-researched articles and blog posts written by healthcare professionals.</p>
+                                    <p class="rev-name">Shamlik</p>
+                                    <p class="rev-contry">USA</p>
+                                </div>
+                                
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./images/download (2).jpeg" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <p class="rev-text">The website's content is informative and reliable, with well-researched articles and blog posts written by healthcare professionals.</p>
+                                    <p class="rev-name">Shamlik</p>
+                                    <p class="rev-contry">USA</p>
+                                </div>
+                                
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+          </section>
+
+        <!--------------------------------review section end--------->
+        <!--------------------------------sub section start---------->
+        <section class="sub-sec-2">
+            <div class="sub-sec-2-card">
+              <h1>Try HealthHive Now</h1>
+              <p>Join Us for Your Health</p>
+              <a href="/subscription"><button>Subscribe Now</button></a>
+            </div>
+        </section>
+
+        <!--------------------------------sub- section end---------->
+        <!--------------------------------footer section start------>
+
+        <%- include('partials/footer.ejs')%>
+
+        <!--------------------------------footer section end-------->
+
+        
+
+
+
+
+
+
+            <script>
+                // Get the button
+                let mybutton = document.getElementById("myBtn");
+                
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+                
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+                </script>
+
+                <!-- <script>
+
+                    function openPopup(){
+                        document.getElementById("popUp").style.display = "block";
+                        //document.getElementById("oppenBtn").style.display = "none";
+                        
+                    }
+                    function closePopup(){
+                        document.getElementById("popUp").style.display = "none";
+                        //document.getElementById("oppenBtn").style.display = "block";
+                    }
+                </script> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

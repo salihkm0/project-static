@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.image-part{
+    background: url(./images/Group\ 31.svg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+.image-part img{
+    align-items: center;
+    /* position: absolute; */
+    width: 94%;
+    height: 45%;
+    margin-top: 50%;
+    margin-left: 3%;
+}
+.text-part {
+    align-items: flex-end;
+    margin-top: 5%;
+}
+.text-part a {
+    float: right;
+    /* display: inline-block; */
+    margin-right: 6%;
+    margin-top: 1%;
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+.text-part a:hover{
+    color: #000;
+    text-decoration: none;
+}
+.text-part .Sign-Up-btn-link{
+    margin-top: -0.5%;
+}
+.text-part .Sign-Up-btn{
+    position: relative;
+    width: 130%;
+    height: 46.67px;
+    float: right;
+    margin-right: 10%;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 21.3333px;
+    line-height: 25px;
+    outline: none;
+} 
+.text-part .Sign-Up-btn:hover{
+    box-shadow: 0  5px #343434;
+    background: rgb(249, 248, 248);
+    color: rgb(49, 49, 49);
+}
+.text-part h2{
+    font-weight: 700;
+    font-size: 230%;
+    line-height: 42px;
+    width: 450px;
+    height: 42px;
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 8%;
+}
+.text-part p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    width: 200px;
+    height: 23px;
+    margin-left: 11%;
+}
+.text-part form{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.text-part form input{
+    width: 80%;
+    height: 60px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 5%;
+    padding-left: 3%;
+    font-size: 25px;
+    border: 1px solid #000;
+}
+.text-part form .login-btn{
+    margin-top: 10%;
+    background: #0077B6;
+    border-radius: 30px;
+    width: 30%;
+    height: 60px;
+    font-weight: 500;
+    font-size: 150%;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+.text-part .login-a {
+    float: left;
+    /* display: inline-block; */
+    margin-right: 2%;
+    margin-top: 1%;
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 150%;
+    line-height: 23px;
+}
+.text-part .login-p{
+    margin-top: 15%;
+    display: inline-block;
+}
+.text-part .login-logo{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 0.3px solid #000000;
+    border-radius: 20px;
+    margin-left: 5px;
+    align-items: center;
+}
+.text-part img{
+    width: 19.79px;
+    height: 19.79px;
+    margin: 7px;
+}
+
+/* ----------------------------Sign-Up -----------------------------*/
+
+
+.reg-text {
+    margin-top: 2%;
+}
+.text-part a {
+    font-size: 17px;
+}
+.text-part .Sign-Up-btn{
+    margin-right: 5%;
+}
+.reg-image-part{
+    background: url(./images/Group\ 32.png) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+.reg-image-part img{
+    align-items: center;
+    width: 94%;
+    height: 45%;
+    margin-top: 50%;
+    margin-left: 3%;
+}
+.reg-text h2{
+    margin-top: 10%;
+    margin-left: 8%;
+}
+.reg-text form{
+    margin-top: 3%;
+}
+.reg-text form input{
+    margin-top: 4%;
+}
+.reg-text form .login-btn{
+    margin-top: 5%;
+}
+.reg-text .other-login{
+    margin-top: -6%;
+    margin-left: 50%;
+    
+}
+::placeholder{
+    opacity: .3;
+}
+
+
+
+@media (max-width : 375px) {
+    .image-part, .reg-image-part{
+        display: none;
+    }
+    .reg-text{
+        background: url(./images/Group\ 32.png) no-repeat;
+    }
+    .text-part{
+        background: url(./images/Group\ 31.svg) no-repeat;
+    }
+}

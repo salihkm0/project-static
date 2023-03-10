@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5d2e8a75d6.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/home-style.css">
+    <title>Profile</title>
+</head>
+<body>
+
+    <!-------------------------------- nav bar start------------------------>
+
+    <%- include('partials/navbar.ejs')%>
+<!-------------------------------- nav bar end----------------------->
+
+    <div class="row profile-row">
+        <div class="col-md-4 p-details">
+            <div class="profile-img">
+                <img src="./images/download (1).jpeg" alt="">
+                <!-- <i class="fa-solid fa-camera"></i> -->
+            </div>
+            <!-- <h2>Salih Km</h2>
+            <p>salih@gmail.com</p> -->
+        </div>
+            <div class="col-md-8">
+                <div class="wrapper">
+                    <input type="radio" name="slider" id="profile_details" checked>
+                    <input type="radio" name="slider" id="billing_details">
+                    <nav>
+                        <label for="profile_details" class="profile_details">Profile</label>
+                        <label for="billing_details" class="billing_details">My Plan</label>
+                        <div class="slider"></div>
+                    </nav>
+                    <section>
+                        <div class="Content content1">
+                            <div class="Profile-details">
+                                <form action="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="" id="" placeholder="First Name" value="Muhammed" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="" id="" placeholder="Last Name" value="Salih Km" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="" id="" placeholder="Email" value="Salih@gmail.com" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="number" class="" id="" placeholder="Phone" value="7566226827" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="" id="" placeholder="State" value="Kerala" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="number" class="" id="" placeholder="Pin" value="452378" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="Bio"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="Update">Update</button>
+                                <button type="reset" class="Reset">Reset</button>
+                            </form>
+                            </div>
+                        </div>
+                        <div class="Content content2" id="plans">
+                            <div class="p-sub-plan">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Current Plane</h6>
+                                        <h1>Pro</h1>
+                                        <p>Unlimited access to the <br>
+                                            essential tool for  HealthHive</p>
+                                        <p class="p-date">Next Payment: $10 on Aril1, 2023</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="upgrade-btn">Upgrade</button>
+                                        <button class="cancel-btn">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plan-hist">
+                                <h1>Billing History</h1>
+                                <table>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Type</th>
+                                        <th>Transaction ID</th>
+                                        <th>Price</th>
+                                    </tr>
+                                    <tr>
+                                        <td>01.03.2023 10.30PM</td>
+                                        <td>Pro Subscription (1 month)</td>
+                                        <td>595SFGS512FSDSFSF</td>
+                                        <td>$15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.03.2023 10.30PM</td>
+                                        <td>Pro Subscription (1 month)</td>
+                                        <td>595SFGS512FSDSFSF</td>
+                                        <td>$15</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
